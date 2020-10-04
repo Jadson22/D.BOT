@@ -1,0 +1,24 @@
+
+---> OPERAÇÃO:
+     ATIVO:GBPJPY| DIREÇÃO:CALL| EXPIRAÇÃO:1M| VALOR:$72.134
+     RESULTADO: LOSS   |PREJUÍZO:$ -32.951089 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -32.95 | TOTAL: -32.95
+----------------------------------------------------------------------------------------------------
+
+---> OPERAÇÃO:
+     ATIVO:GBPJPY| DIREÇÃO:CALL| EXPIRAÇÃO:1M| VALOR:$158.694
+     RESULTADO: LOSS   |PREJUÍZO:$ -110.04699799999999 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -143.0 | TOTAL: -143.0
+----------------------------------------------------------------------------------------------------
+
+---> OPERAÇÃO:
+     ATIVO:GBPJPY| DIREÇÃO:CALL| EXPIRAÇÃO:1M| VALOR:$349.127
+     RESULTADO: LOSS   |PREJUÍZO:$ -122.57239799999999 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -265.57 | TOTAL: -265.57
+----------------------------------------------------------------------------------------------------
+
+---> OPERAÇÃO:
+     ATIVO:GBPJPY| DIREÇÃO:CALL| EXPIRAÇÃO:1M| VALOR:$72.134
+     RESULTADO: WIN    |LUCRO:$ 43.34779999999999 :)
+       LUCRO PARCIAL: 43.35 | PERDA PARCIAL: -265.57 | TOTAL: -222.22
+----------------------------------------------------------------------------------------------------

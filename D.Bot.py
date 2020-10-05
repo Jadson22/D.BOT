@@ -168,7 +168,6 @@ if existe_arquivo:
     janela['stop_win'].update(arquivo.get('GERENCIAMENTO', 'take_profit'))
     janela['stop_loss'].update(arquivo.get('GERENCIAMENTO', 'stop_loss'))
     janela['gerenciamento'].update(porcentagem)
-    filtroDbot
     janela['filtroDbot'].update(filtroDbot)
     janela['martingale'].update(martingale)
     janela['martingalePO'].update(martingalePO)
@@ -230,8 +229,8 @@ while True:
         #desabilitando botões
         janela['email'].update(email, disabled=True)
         janela['senha'].update(senha, disabled=True)
-        janela['treinamento'].update(True, disabled=True)
-        janela['real'].update(True, disabled=True)
+        janela['treinamento'].update(disabled=True)
+        janela['real'].update(disabled=True)
         janela['preco'].update(amount, disabled=True)
         janela['porcentagem_preco'].update(porc_preco, disabled=True)
         janela['stop_win'].update(arquivo.get('GERENCIAMENTO', 'take_profit'), disabled=True)
@@ -325,7 +324,7 @@ while True:
                                   data_em_texto+'.txt', 'a', encoding='utf8')
                 arquivoLOG.write('\n---> MARTINGALE:\n')
                 arquivoLOG.close()
-                valorMartingale = valor * int(fatorMG)
+                valorMartingale = valor * float(fatorMG)
                 if moeda in abertasBinaria:
                     threading.Thread(target=buy_binary, args=(
                         valorMartingale, moeda, direcao, timeframe), daemon=True).start()
@@ -554,6 +553,7 @@ while True:
             global perca
             global nivel_SG
             global lucro_total
+            global quantidadeMgPO
             trava = False
             while True:
                 status, id = API.buy(
@@ -632,7 +632,7 @@ while True:
                               str(perfil()['currency_char'])+' ', round(resultado, 2), ' :(')
                         arquivoLOG = open(
                             'Log de operacoes/' + data_em_texto+'.txt', 'a', encoding='utf8')
-                        arquivoLOG.write('\n     RESULTADO: LOSS   |'+'PREJUÍZO:'+str(
+                        arquivoLOG.write('\n     RESULTADO: LOSS   |'+'PREJUIZO:'+str(
                             dados_conta['currency_char'])+' '+str(resultado)+' :(')
                         arquivoLOG.close()
                         amount = initial_value

@@ -1,762 +1,764 @@
 from iqoptionapi.stable_api import IQ_Option
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ=True
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY=open
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJl=IOError
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs=print
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ=float
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYls=ValueError
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ=str
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl=False
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl=int
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY=round
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslJ=id
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslY=list
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ=True
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl=open
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJv=IOError
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN=print
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ=float
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvN=ValueError
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ=str
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv=False
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv=int
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl=round
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvJ=id
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvl=list
 import PySimpleGUI as sg
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYlb=sg.WIN_CLOSED
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYbs=sg.Window
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYbl=sg.Column
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsY=sg.Checkbox
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb=sg.Radio
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs=sg.Input
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYb=sg.Frame
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlbs=sg.Image
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlbY=sg.Button
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsY=sg.Output
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl=sg.Text
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYs=sg.change_look_and_feel
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvL=sg.WIN_CLOSED
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlLN=sg.Window
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlLv=sg.Column
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNl=sg.Checkbox
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL=sg.Radio
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN=sg.Input
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlL=sg.Frame
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvLN=sg.Image
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvLl=sg.Button
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNl=sg.Output
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv=sg.Text
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlN=sg.change_look_and_feel
 import time
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls=time.sleep
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN=time.sleep
 import requests
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYsb=requests.get
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlNL=requests.get
 import logging
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsbl=logging.DEBUG
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYsl=logging.disable
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNLv=logging.DEBUG
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlNv=logging.disable
 import configparser
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsbY=configparser.RawConfigParser
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNLl=configparser.RawConfigParser
 import json
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJslY=json.dumps
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJslb=json.loads
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNvl=json.dumps
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNvL=json.loads
 import os
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYb=os.path
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlL=os.path
 import sys
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJlY=sys.stdout
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYl=sys.exit
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvl=sys.stdout
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlv=sys.exit
 import socket
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJYs=socket.SOCK_STREAM
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJYl=socket.AF_INET
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJls=socket.socket
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJlN=socket.SOCK_STREAM
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJlv=socket.AF_INET
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvN=socket.socket
 import os
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYb=os.path
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlL=os.path
 from datetime import datetime,date,timedelta
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJY=date.today
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsY=datetime.utcfromtimestamp
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsl=datetime.strptime
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJl=date.today
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNl=datetime.utcfromtimestamp
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNv=datetime.strptime
 from dateutil import tz
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJs=tz.gettz
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJN=tz.gettz
 import threading
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ=threading.Thread
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ=threading.Thread
 from colorama import init,Fore,Back
 from random import randint
 import pyrebase
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYs=pyrebase.initialize_app
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYsl(level=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsbl))
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYs('Black')
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbls=[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('    ')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsY(size=(83,35),font=('Helvetica',11),key='-OUT-')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlbY('  SALVAR CONFIGURACOES ',key='salvar')]]
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbYl=[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl(''),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlbs(r'log/log.png',size=(200,205))],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('       '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlbY('  INICIAR OPERACOES  ',key='iniciar')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYb(' Acesso ',[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Email IQ: ',key='txtw'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(25,0),key='email',background_color='white',text_color='black')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Senha IQ:'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(25,0),key='senha',background_color='white',text_color='black',password_char='*')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl(' '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb('Treinamento',key='treinamento',group_id='1',default='true'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('     '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb('Real',key='real',group_id='1'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('       ')],])],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYb(' Preco da Operacao ',[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsY('em %',key='porcentagem_preco'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Valor: '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(12,0),key='preco',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('       ')],])],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYb(' Gerenciamento ',[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsY('Filtro D.BOT',key='filtroDbot')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb('Martingale',key='martingale',group_id='2'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb('Soros',key='soros',group_id='2'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsb('SorosGale',key='sorosGale',group_id='2')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Nivel:        '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(17,0),key='nivel_Estrategia',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl(' ')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsY('Martingale PO',key='martingalePO')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Nivel: '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(5,0),key='nivel_Estrategia_PO',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Fator Mg: '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(5,0),key='fatorMG',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('X')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Payout:    '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(17,0),key='payout',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl(' ')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Stop Win: '),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(17,0),key='stop_win',background_color='white',text_color='black'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl(' ')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbsl('Stop Loss:'),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlYs(size=(17,0),key='stop_loss',background_color='white',text_color='black')],[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJlsY('Stop em %',key='gerenciamento')],])],]
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbYs=[[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYbl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbYl),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYbl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbls)]]
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYbs('D.BOT',icon='log/log.ico',finalize=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).layout(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbYs)
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl.Finalize()
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['iniciar'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbs
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb=[]
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs=[]
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=0
-global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb=0
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYb.isfile('./setup.conf')
-if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsl:
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlN=pyrebase.initialize_app
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlNv(level=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNLv))
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlN('Black')
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLvN=[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('    ')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNl(size=(83,35),font=('Helvetica',11),key='-OUT-')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvLl('  SALVAR CONFIGURACOES ',key='salvar')]]
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLlv=[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv(''),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvLN(r'log/log.png',size=(200,205))],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('       '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvLl('  INICIAR OPERACOES  ',key='iniciar')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlL(' Acesso ',[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Email IQ: ',key='txtw'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(25,0),key='email',background_color='white',text_color='black')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Senha IQ:'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(25,0),key='senha',background_color='white',text_color='black',password_char='*')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv(' '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL('Treinamento',key='treinamento',group_id='1',default='true'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('     '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL('Real',key='real',group_id='1'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('       ')],])],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlL(' Preco da Operacao ',[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNl('em %',key='porcentagem_preco'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Valor: '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(12,0),key='preco',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('       ')],])],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlL(' Gerenciamento ',[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNl('Filtro D.BOT',key='filtroDbot')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL('Martingale',key='martingale',group_id='2'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL('Soros',key='soros',group_id='2'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNL('SorosGale',key='sorosGale',group_id='2')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Nivel:        '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(17,0),key='nivel_Estrategia',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv(' ')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNl('Martingale PO',key='martingalePO')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Nivel: '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(5,0),key='nivel_Estrategia_PO',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Fator Mg: '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(5,0),key='fatorMG',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('X')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Payout:    '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(17,0),key='payout',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv(' ')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Stop Win: '),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(17,0),key='stop_win',background_color='white',text_color='black'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv(' ')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLNv('Stop Loss:'),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvlN(size=(17,0),key='stop_loss',background_color='white',text_color='black')],[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJvNl('Stop em %',key='gerenciamento')],])],]
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLlN=[[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlLv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLlv),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlLv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLvN)]]
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlLN('D.BOT',icon='log/log.ico',finalize=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).layout(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLlN)
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv.Finalize()
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['iniciar'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLN
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL=[]
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN=[]
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=0
+global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL=0
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlL.isfile('./setup.conf')
+if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNv:
  try:
-  file=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('setup.conf')
- except TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJl:
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('Ocorreu um erro, voce deve definir as configuracoes no Configurador primeiro. \n\n O sistema sera encerrado')
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(5)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsbY()
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.read('setup.conf')
+  file=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('setup.conf')
+ except wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJv:
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('Ocorreu um erro, voce deve definir as configuracoes no Configurador primeiro. \n\n O sistema sera encerrado')
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(5)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNLl()
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.read('setup.conf')
  try:
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('USER','email')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('USER','senha')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslY="""{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYb
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','tipo_conta').lower()
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','preco_operacao'))
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','porc_preco')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','filtroDbot')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','martingale')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','martingalePO')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','soros')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','sorosGale')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','nivel_Estrategia')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','nivel_Estrategia_PO')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','fatorMG')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','payout')
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','take_profit'))
-  if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=='0' or TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=='':
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=100000
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('USER','email')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('USER','senha')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvl="""{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlL
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','tipo_conta').lower()
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','preco_operacao'))
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','porc_preco')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','filtroDbot')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','martingale')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','martingalePO')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','soros')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','sorosGale')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','nivel_Estrategia')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','nivel_Estrategia_PO')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','fatorMG')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','payout')
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','take_profit'))
+  if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=='0' or wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=='':
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=100000
   else:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','stop_loss')
-  if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=='0' or TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=='':
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=100000
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','stop_loss')
+  if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=='0' or wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=='':
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=100000
   else:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY)
-  global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('GERENCIAMENTO','porcentagem')
- except TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYls:
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n\n    Inconsistencia nas configuracoes especificadas, \n    voce nao pode deixar campos em branco ou usar virgula em numero decimal!\n    Assista todos os videos de configuracao para nao ter nenhuma duvida!')
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['email'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['senha'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb)
- if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYb=='t':
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['treinamento'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl)
+  global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('GERENCIAMENTO','porcentagem')
+ except wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvN:
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n\n    Inconsistencia nas configuracoes especificadas, \n    voce nao pode deixar campos em branco ou usar virgula em numero decimal!\n    Assista todos os videos de configuracao para nao ter nenhuma duvida!')
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['email'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['senha'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL)
+ if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlL=='t':
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['treinamento'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
  else:
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['real'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['preco'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['porcentagem_preco'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['stop_win'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','take_profit'))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['stop_loss'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','stop_loss'))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['gerenciamento'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['filtroDbot'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['martingale'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['martingalePO'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['soros'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['sorosGale'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['nivel_Estrategia'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['nivel_Estrategia_PO'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['fatorMG'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['payout'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs)
-def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSb():
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('setup'+'.conf','w+',encoding='utf8')
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('[USER]')
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nemail='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['email'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nsenha='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['senha'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\n[TRADE]')
- if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['real']:
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYls='r'
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['real'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['preco'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['porcentagem_preco'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['stop_win'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','take_profit'))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['stop_loss'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','stop_loss'))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['gerenciamento'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['filtroDbot'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['martingale'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['martingalePO'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['soros'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['sorosGale'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['nivel_Estrategia'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['nivel_Estrategia_PO'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['fatorMG'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['payout'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN)
+def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkL():
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('setup'+'.conf','w+',encoding='utf8')
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('[USER]')
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nemail='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['email'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nsenha='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['senha'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\n[TRADE]')
+ if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['real']:
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvN='r'
  else:
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYls='t'
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\ntipo_conta='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYls)
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nporc_preco='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['porcentagem_preco']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\npreco_operacao='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['preco'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nfiltroDbot='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['filtroDbot']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nmartingale='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['martingale']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nmartingalePO='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['martingalePO']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nsoros='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['soros']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nsorosGale='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['sorosGale']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nnivel_Estrategia='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['nivel_Estrategia'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nnivel_Estrategia_PO='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['nivel_Estrategia_PO'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nfatorMG='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['fatorMG'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\npayout='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['payout'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\n[GERENCIAMENTO]')
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nporcentagem='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['gerenciamento']))
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\ntake_profit='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['stop_win'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.writelines('\nstop_loss='+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS['stop_loss'])
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSs.close()
-while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
- TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYlS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl.read()
- if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsS in(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYlb,'Exit'):
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl.close()
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYl()
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvN='t'
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\ntipo_conta='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvN)
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nporc_preco='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['porcentagem_preco']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\npreco_operacao='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['preco'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nfiltroDbot='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['filtroDbot']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nmartingale='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['martingale']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nmartingalePO='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['martingalePO']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nsoros='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['soros']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nsorosGale='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['sorosGale']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nnivel_Estrategia='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['nivel_Estrategia'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nnivel_Estrategia_PO='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['nivel_Estrategia_PO'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nfatorMG='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['fatorMG'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\npayout='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['payout'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\n[GERENCIAMENTO]')
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nporcentagem='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['gerenciamento']))
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\ntake_profit='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['stop_win'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.writelines('\nstop_loss='+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk['stop_loss'])
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkN.close()
+while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+ wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlvk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv.read()
+ if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNk in(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvL,'Exit'):
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv.close()
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlv()
   break
- if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsS=='salvar':
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['iniciar'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSb()
- if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsS=='iniciar':
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['iniciar'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['salvar'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['email'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['senha'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['treinamento'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['real'].update(disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['preco'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['porcentagem_preco'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['stop_win'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','take_profit'),disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['stop_loss'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','stop_loss'),disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['gerenciamento'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['filtroDbot'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['martingale'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['martingalePO'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['soros'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['sorosGale'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['nivel_Estrategia'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['nivel_Estrategia_PO'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['fatorMG'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl['payout'].update(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs,disabled=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ)
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSY(msg='    Por favor, verifique as configuracoes de TRADE'):
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(msg)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n    Reinicie o sistema para tentar novamente... \n ')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYl()
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslbS(x,retorno=1):
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsY(x).strftime('%Y-%m-%d %H:%M:%S'),'%Y-%m-%d %H:%M:%S')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsl.replace(tzinfo=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJs('GMT'))
-   return TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsl.astimezone(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJs('America/Sao Paulo')))[:-6]if retorno==1 else TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYsl.astimezone(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJs('America/Sao Paulo'))
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslbY(x,y):
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsSl=timedelta(milliseconds=x)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsSY=timedelta(milliseconds=y)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbslS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsSl.seconds
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbslY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsSY.seconds
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbslY-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbslS
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYl=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYS%3600)//60
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYl==0:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYl=1
-   return TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbsYl
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslYS():
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlbS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYb
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-   while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    for TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbs in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlbS:
-     a=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJls(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJYl,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJYs)
+ if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNk=='salvar':
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['iniciar'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkL()
+ if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNk=='iniciar':
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['iniciar'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['salvar'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkl(msg='    Por favor, verifique as configuracoes de TRADE'):
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(msg)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n    Reinicie o sistema para tentar novamente... \n ')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlv()
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvLk(x,retorno=1):
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNl(x).strftime('%Y-%m-%d %H:%M:%S'),'%Y-%m-%d %H:%M:%S')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNv.replace(tzinfo=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJN('GMT'))
+   return wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNv.astimezone(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJN('America/Sao Paulo')))[:-6]if retorno==1 else wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlNv.astimezone(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJN('America/Sao Paulo'))
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvLl(x,y):
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNkv=timedelta(milliseconds=x)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNkl=timedelta(milliseconds=y)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNvk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNkv.seconds
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNvl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNkl.seconds
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNvl-wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNvk
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlv=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlk%3600)//60
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlv==0:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlv=1
+   return wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLNlv
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvlk():
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvLk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklL
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+   while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    for wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLN in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvLk:
+     a=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvN(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJlv,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJlN)
      a.settimeout(.5)
      try:
-      b=a.connect_ex((TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbs,80))
+      b=a.connect_ex((wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLN,80))
       if b==0:
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbY==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYb=db.child("sinais/1").stream(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbS)
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> CONECTADO AO BANCO DE DADOS COM SUCESSO!\n')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLl==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklL=db.child("sinais/1").stream(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLk)
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> CONECTADO AO BANCO DE DADOS COM SUCESSO!\n')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
      except:
       pass
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbY==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYb.close()
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nPERDA DE CONEXAO COM O BANCO DE DADOS, VERIFIQUE SUA INTERNET OU UM POSSIVEL BLOQUEIO DO ANTIVIRUS')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> TENTANDO RECONECTAR...\n')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLl==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklL.close()
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nPERDA DE CONEXAO COM O BANCO DE DADOS, VERIFIQUE SUA INTERNET OU UM POSSIVEL BLOQUEIO DO ANTIVIRUS')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> TENTANDO RECONECTAR...\n')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
      a.close()
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslYb():
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-   while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.check_connect()==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYs==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nPERDA DE CONEXAO COM A IQ OPTION, VERIFIQUE SUA INTERNET OU UM POSSIVEL BLOQUEIO DO ANTIVIRUS')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> TENTANDO RECONECTAR...\n')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.connect()
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvlL():
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+   while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.check_connect()==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklN==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nPERDA DE CONEXAO COM A IQ OPTION, VERIFIQUE SUA INTERNET OU UM POSSIVEL BLOQUEIO DO ANTIVIRUS')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> TENTANDO RECONECTAR...\n')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.connect()
     else:
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYs==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> CONECTADO A IQ OPTION COM SUCESSO!\n')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb():
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJslb(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJslY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_profile_ansyc()))
-   return TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb):
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> MARTINGALE:\n')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> MARTINGALE:\n')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbls,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-    elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJblY,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbS(message):
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYS
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(message["data"])
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYS!=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs.split(';')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs[0]
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs[1]
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs[2])
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs[3]
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYs[4]
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-     global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb=0
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbls,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-      elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJblY,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ and TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbS=='t':
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbls,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-      elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJblY,args=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb),daemon=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ).start()
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb,tipo,timeframe=1):
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklN==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> CONECTADO A IQ OPTION COM SUCESSO!\n')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL():
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNvL(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNvl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_profile_ansyc()))
+   return wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL):
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> MARTINGALE:\n')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> MARTINGALE:\n')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvN,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+    elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvl,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLk(message):
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlk
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(message["data"])
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlk!=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN.split(';')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN[0]
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN[1]
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN[2])
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN[3]
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlN[4]
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+     global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL=0
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvN,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+      elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvl,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ and wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLk=='t':
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvN,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+      elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvl,args=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL),daemon=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ).start()
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL,tipo,timeframe=1):
    if tipo=='turbo':
-    a=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_all_profit()
-    return TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(100*a[TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb]['turbo'])
+    a=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_all_profit()
+    return wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(100*a[wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL]['turbo'])
    elif tipo=='digital':
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.subscribe_strike_list(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb,timeframe)
-    while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-     d=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_digital_current_profit(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb,timeframe)
-     if d!=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-      d=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(d)
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.subscribe_strike_list(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL,timeframe)
+    while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+     d=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_digital_current_profit(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL,timeframe)
+     if d!=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+      d=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(d)
       break
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(1)
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.unsubscribe_strike_list(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb,timeframe)
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(1)
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.unsubscribe_strike_list(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL,timeframe)
     return d
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYlS():
-   while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb
-    global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_all_open_time()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb.clear()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs.clear()
-    for TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb['digital']:
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb['digital'][TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb]['open']==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb,'digital')
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSY>=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs):
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYb.append(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb)
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlvk():
+   while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL
+    global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_all_open_time()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL.clear()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN.clear()
+    for wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL['digital']:
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL['digital'][wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL]['open']==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL,'digital')
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkl>=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN):
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlL.append(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL)
      continue
-    for TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb['turbo']:
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsb['turbo'][TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb]['open']==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb,'turbo')
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSY>=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs):
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlYs.append(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsSb)
+    for wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL['turbo']:
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNL['turbo'][wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL]['open']==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL,'turbo')
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkl>=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN):
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvlN.append(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNkL)
      continue
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(1200)
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(1200)
     continue
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYlb(res):
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlvL(res):
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl
    if res=='win':
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> STOP WIN - FOI UM PRAZER BATER META PARA VOCE :)')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> ---> STOP WIN :)')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> STOP WIN - FOI UM PRAZER BATER META PARA VOCE :)')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> ---> STOP WIN :)')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
    elif res=='loss':
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> STOP LOSS - DESCULPE, HOJE NAO FOI MEU DIA :(')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> STOP LOSS :(')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJblY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb):
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslJ=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.buy_digital_spot(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY.lower(),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> OPERACAO:')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       ATIVO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,'| DIRECAO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,'| EXPIRACAO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb,'M','| VALOR:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'],TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,2))
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> OPERACAO:')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     ATIVO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS)+'| DIRECAO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY)+'| EXPIRACAO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)+'M'+'| VALOR:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,3)))
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-    while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.check_win_digital_v2(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslJ)
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS:
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY>0:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       RESULTADO: WIN    |','LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'])+' ',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2),' :)')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     RESULTADO: WIN    |'+'LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :)')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYl()
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb==0:
-         if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY):
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl=0
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb=0
-         elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl<TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY):
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl+=1
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> STOP LOSS - DESCULPE, HOJE NAO FOI MEU DIA :(')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> STOP LOSS :(')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL):
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvJ=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.buy_digital_spot(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl.lower(),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> OPERACAO:')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       ATIVO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,'| DIRECAO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,'| EXPIRACAO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL,'M','| VALOR:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'],wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,2))
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> OPERACAO:')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     ATIVO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk)+'| DIRECAO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl)+'| EXPIRACAO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)+'M'+'| VALOR:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,3)))
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+    while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.check_win_digital_v2(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvJ)
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk:
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl>0:
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       RESULTADO: WIN    |','LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'])+' ',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2),' :)')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     RESULTADO: WIN    |'+'LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :)')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlv()
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl:
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL==0:
+         if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl):
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv=0
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL=0
+         elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv<wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl):
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv+=1
         else:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls,2)
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb!=0 and TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls>=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('    SOROSGALE VOLTANDO AO NIVEL 0')
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb=0
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs=0
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=0
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl=0
-       elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl:
-        global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n---> SOROS:\n')
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY+=1
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN,2)
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL!=0 and wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN>=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN:
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('    SOROSGALE VOLTANDO AO NIVEL 0')
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv=0
+       elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv:
+        global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl:
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n---> SOROS:\n')
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl+=1
         else:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl=0
       else:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       RESULTADO: LOSS    |','PREJUIZO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'])+' ',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2),' :(')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     RESULTADO: LOSS   |'+'PREJUIZO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :(')
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY=0
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYl()
-       global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb+=1
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       RESULTADO: LOSS    |','PREJUIZO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'])+' ',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2),' :(')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     RESULTADO: LOSS   |'+'PREJUIZO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :(')
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl=0
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlv()
+       global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv:
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL:
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL+=1
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)
         else:
-         if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs:
-          if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb:
-           TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> MARTINGALE PROXIMA OPERACAO:\n')
-           TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb+=1
-           TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
-       elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb==0:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS/2
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb+=1
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
+         if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN:
+          if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL:
+           wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> MARTINGALE PROXIMA OPERACAO:\n')
+           wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL+=1
+           wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
+       elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl:
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL==0:
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk/2
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL+=1
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
         else:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=0
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs/2
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs/2
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb+=1
-       elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb:
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> MARTINGALE PROXIMA OPERACAO:\n')
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb+=1
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN/2
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN/2
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL+=1
+       elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN:
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL:
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> MARTINGALE PROXIMA OPERACAO:\n')
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL+=1
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
       break
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> RESULTADO:')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('-'*131)
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbls(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb):
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-   while TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslJ=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.buy(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY.lower(),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbS:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(randint(0,4))
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> OPERACAO:')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('     ATIVO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,'| DIRECAO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,'| EXPIRACAO:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb,'M','| VALOR:',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'],TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,3))
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> OPERACAO:')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     ATIVO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS)+'| DIRECAO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY)+'| EXPIRACAO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)+'M'+'| VALOR:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,3)))
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.check_win_v3(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslJ),3)
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY>0:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       RESULTADO: WIN    |','LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'])+' ',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2),' :)')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     RESULTADO: WIN    |'+'LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :)')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYl()
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY:
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb==0:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY):
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl=0
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb=0
-        elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl<TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY):
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-         TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl+=1
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> RESULTADO:')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('-'*131)
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLvN(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL):
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+   while wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvJ=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.buy(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl.lower(),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLk:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(randint(0,4))
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> OPERACAO:')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('     ATIVO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,'| DIRECAO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,'| EXPIRACAO:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL,'M','| VALOR:',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'],wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,3))
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> OPERACAO:')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     ATIVO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk)+'| DIRECAO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl)+'| EXPIRACAO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)+'M'+'| VALOR:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,3)))
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.check_win_v3(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvJ),3)
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl>0:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       RESULTADO: WIN    |','LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'])+' ',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2),' :)')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     RESULTADO: WIN    |'+'LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :)')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlv()
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl:
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL==0:
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl):
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv=0
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL=0
+        elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv<wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl):
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+         wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv+=1
        else:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls,2)
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb!=0 and TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls>=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('    SOROSGALE VOLTANDO AO NIVEL 0')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb=0
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs=0
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=0
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbl=0
-      elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl:
-       global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> SOROS:\n')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n---> SOROS:\n')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2)
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY+=1
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN,2)
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL!=0 and wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN>=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('    SOROSGALE VOLTANDO AO NIVEL 0')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL=0
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN=0
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=0
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLv=0
+      elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv:
+       global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> SOROS:\n')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n---> SOROS:\n')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2)
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl+=1
        else:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY=0
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl=0
       break
-     elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY==0:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('     RESULTADO: DOJI    |','LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :|')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     RESULTADO: DOJI    |'+'LUCRO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :|')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
+     elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl==0:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('     RESULTADO: DOJI    |','LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :|')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     RESULTADO: DOJI    |'+'LUCRO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :|')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
       break
      else:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       RESULTADO: LOSS    |','PREJUIZO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()['currency_char'])+' ',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,2),' :(')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n     RESULTADO: LOSS   |'+'PREJUIZO:'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'])+' '+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY)+' :(')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsY=0
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYl()
-      global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl:
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlsb+=1
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsS,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsbY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbsY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYSb)
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       RESULTADO: LOSS    |','PREJUIZO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()['currency_char'])+' ',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,2),' :(')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n     RESULTADO: LOSS   |'+'PREJUIZO:'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'])+' '+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl)+' :(')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNl=0
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlv()
+      global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv:
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvNL+=1
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNk,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNLl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLNl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlkL)
        else:
-        if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs:
-         if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb:
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> MARTINGALE PROXIMA OPERACAO:\n')
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb+=1
-          TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
-      elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY:
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb==0:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS/2
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb+=1
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
+        if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN:
+         if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL:
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> MARTINGALE PROXIMA OPERACAO:\n')
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL+=1
+          wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
+      elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl:
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL==0:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk/2
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL+=1
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
        else:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYls=0
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs+=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs/2
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYbs/2
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYlb+=1
-      elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs:
-       if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs)>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb:
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('---> MARTINGALE PROXIMA OPERACAO:\n')
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSYsb+=1
-        TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYbs*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS)
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvN=0
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN+=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN/2
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklLN/2
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklvL+=1
+      elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN:
+       if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN)>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL:
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('---> MARTINGALE PROXIMA OPERACAO:\n')
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJklNL+=1
+        wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlLN*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk)
       break
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
-  def TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJbYl():
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS)-(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl)*-1)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(' ')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS,2),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl,2),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs,2)))
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('-'*131)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('Log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','a',encoding='utf8')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS,2),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl,2),TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbsJY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs,2)))
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('-'*100)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.write('\n')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs>=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSY:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYlb('win')
-   elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs<=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsblS:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYlb('loss')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+  def wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJLlv():
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk)-(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv)*-1)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(' ')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk,2),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv,2),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN,2)))
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('-'*131)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('Log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','a',encoding='utf8')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk,2),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv,2),wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNJl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN,2)))
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('-'*100)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.write('\n')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN>=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkl:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlvL('win')
+   elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN<=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLvk:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlvL('loss')
   try:
-   file=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('setup.conf')
-  except TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJl:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('Ocorreu um erro, voce deve definir as configuracoes no Configurador primeiro. \n\n O sistema sera encerrado')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(5)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYl()
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsbY()
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.read('setup.conf')
+   file=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('setup.conf')
+  except wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJv:
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('Ocorreu um erro, voce deve definir as configuracoes no Configurador primeiro. \n\n O sistema sera encerrado')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(5)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlv()
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNLl()
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.read('setup.conf')
   try:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('USER','email')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('USER','senha')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslY="""{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','tipo_conta').lower()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','preco_operacao'))
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','porc_preco')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','filtroDbot')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','martingale')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','martingalePO')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','soros')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('TRADE','sorosGale')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','nivel_Estrategia')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','nivel_Estrategia_PO')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','fatorMG')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblYs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('TRADE','payout')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','take_profit'))
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=='0' or TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=='':
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=100000
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('USER','email')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('USER','senha')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvl="""{"code":"invalid_credentials","message":"You entered the wrong credentials. Please check that the login/password is correct."}"""
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','tipo_conta').lower()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','preco_operacao'))
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','porc_preco')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','filtroDbot')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','martingale')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','martingalePO')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','soros')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('TRADE','sorosGale')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','nivel_Estrategia')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','nivel_Estrategia_PO')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','fatorMG')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('TRADE','payout')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','take_profit'))
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=='0' or wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=='':
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=100000
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.get('GERENCIAMENTO','stop_loss')
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=='0' or TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=='':
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=100000
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','stop_loss')
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=='0' or wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=='':
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=100000
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYlJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbl.getboolean('GERENCIAMENTO','porcentagem')
-  except TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYls:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n\n    Inconsistencia nas configuracoes especificadas, \n    voce nao pode deixar campos em branco ou usar virgula em numero decimal!\n    Assista todos os videos de configuracao para nao ter nenhuma duvida!')
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('='*27+' COPYRIGHT TOP GAIN '+'='*27)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS=IQ_Option(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslb)
-  TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSlb,TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.connect()
-  if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSlb:
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSsb={"apiKey":"apiKey","authDomain":"dtraders-86997.firebaseapp.com","databaseURL":"https://dtraders-86997.firebaseio.com/","storageBucket":"projectId.appspot.com"}
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYs(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSsb)
-   db=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSsl.database()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYSb()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['first_name'].upper()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYblS=db.child("mensagem1").get()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbls=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYblS.val())
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbsS=db.child("mensagem2").get()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbsl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbsS.val())
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlSb=db.child("mensagem3").get()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlSs=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlSb.val())
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlbS=['demotrade-topgain.firebaseio.com']
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslYb).start()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslYS).start()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n')
-   for i in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbls):
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(i,end='')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJlY.flush()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(0.05)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSs)
-   for u in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbsl):
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(u,end='')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJlY.flush()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(0.05)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(' ')
-   for l in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbslY(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlSs):
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(l,end='')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJlY.flush()
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(0.05)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs(' ')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlsb='1'
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsSb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYsb('https://assinantes-dbot.herokuapp.com/assinantes')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsSl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsSb.json()
-   for i in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsSl:
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlsb==i['email']:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlsS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.getboolean('GERENCIAMENTO','porcentagem')
+  except wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlvN:
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n\n    Inconsistencia nas configuracoes especificadas, \n    voce nao pode deixar campos em branco ou usar virgula em numero decimal!\n    Assista todos os videos de configuracao para nao ter nenhuma duvida!')
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['email'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['senha'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['treinamento'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['real'].update(disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['preco'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['porcentagem_preco'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['stop_win'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','take_profit'),disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['stop_loss'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLv.get('GERENCIAMENTO','stop_loss'),disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['gerenciamento'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['filtroDbot'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvN,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['martingale'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklv,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['martingalePO'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLklN,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['soros'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNv,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['sorosGale'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkNl,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['nivel_Estrategia'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkl,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['nivel_Estrategia_PO'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvkN,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['fatorMG'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlk,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv['payout'].update(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvlN,disabled=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('='*27+' COPYRIGHT TOP GAIN '+'='*27)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk=IQ_Option(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvL)
+  wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkvL,wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.connect()
+  if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkvL:
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkNL={"apiKey":"apiKey","authDomain":"dtraders-86997.firebaseapp.com","databaseURL":"https://dtraders-86997.firebaseio.com/","storageBucket":"projectId.appspot.com"}
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlN(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkNL)
+   db=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkNv.database()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlkL()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['first_name'].upper()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLvk=db.child("mensagem1").get()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLvN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLvk.val())
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLNk=db.child("mensagem2").get()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLNv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLNk.val())
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvkL=db.child("mensagem3").get()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvkN=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvkL.val())
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvLk=['demotrade-topgain.firebaseio.com']
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvlL).start()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvlk).start()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n')
+   for i in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLvN):
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(i,end='')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvl.flush()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(0.05)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkN)
+   for u in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLNv):
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(u,end='')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvl.flush()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(0.05)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(' ')
+   for l in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLNvl(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvkN):
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(l,end='')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJvl.flush()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(0.05)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN(' ')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvNL='1'
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNkL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlNL('https://assinantes-dbot.herokuapp.com/assinantes')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNkv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNkL.json()
+   for i in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNkv:
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvNL==i['email']:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvNk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
      break
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYlsS==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nHA UMA VERSAO MAIS ATUALIZADA, BAIXE NA AREA DE MEMBROS DA HOTMART')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslbS(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_server_timestamp(),2)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbS.strftime('%d/%m/%Y')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYslS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-   for i in TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsSl:
-    if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsbY==i['email']:
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYslS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYslb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsl(i['data'],'%d/%m/%Y')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbl=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYslb+timedelta(days=31))
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbJsl(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbl,'%d/%m/%Y')
-     dt=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbl.strftime('%d/%m/%Y')
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbl-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbl
-     TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbY)[:-9]
-     if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYsbl>TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbl:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nSUA LICENCA VENCEU DIA: {}'.format(dt))
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nO SISTEMA FUNCIONARA APENAS EM MODO DE TREINAMENTO')
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlb='PRACTICE'
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlY='Conta de treinamento'
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlvNk==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nHA UMA VERSAO MAIS ATUALIZADA, BAIXE NA AREA DE MEMBROS DA HOTMART')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvLk(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_server_timestamp(),2)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLk.strftime('%d/%m/%Y')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNvk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+   for i in wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNkv:
+    if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNLl==i['email']:
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNvk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNvL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNv(i['data'],'%d/%m/%Y')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLv=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNvL+timedelta(days=31))
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLJNv(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLv,'%d/%m/%Y')
+     dt=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLv.strftime('%d/%m/%Y')
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLv-wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLv
+     wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLl)[:-9]
+     if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNLv>wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLv:
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nSUA LICENCA VENCEU DIA: {}'.format(dt))
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nO SISTEMA FUNCIONARA APENAS EM MODO DE TREINAMENTO')
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvL='PRACTICE'
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvl='Conta de treinamento'
      else:
-      TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nRESTAM {} DIAS DE SUA LICENCA'.format(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSbY[0:3]))
-      if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYb=='r':
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlb='REAL'
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlY='Conta real'
+      wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nRESTAM {} DIAS DE SUA LICENCA'.format(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkLl[0:3]))
+      if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlL=='r':
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvL='REAL'
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvl='Conta real'
       else:
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlb='PRACTICE'
-       TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlY='Conta de treinamento'
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvL='PRACTICE'
+       wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvl='Conta de treinamento'
      break
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYslS==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nLICENCA INVALIDA PARA O EMAIL INFORMADO')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nO SISTEMA FUNCIONARA APENAS EM MODO DE TREINAMENTO')
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlb='PRACTICE'
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlY='Conta de treinamento'
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.change_balance(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSlb)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlYsS.get_balance()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\nBANCA INICIAL: ',TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYbSl['currency_char'],TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYb)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblJY()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYl.strftime('%d%m%Y')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsY('log de operacoes/'+TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSl+'.txt','w')
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSsb.close()
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbYSl==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSY=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYb)/100
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsblS=((TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYb)/100)*-1
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlNvk==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nLICENCA INVALIDA PARA O EMAIL INFORMADO')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nO SISTEMA FUNCIONARA APENAS EM MODO DE TREINAMENTO')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvL='PRACTICE'
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvl='Conta de treinamento'
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.change_balance(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNkvL)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvlNk.get_balance()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\nBANCA INICIAL: ',wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlLkv['currency_char'],wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklL)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvJl()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklv.strftime('%d%m%Y')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNl('log de operacoes/'+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkv+'.txt','w')
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvkNL.close()
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLlkv==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkl=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklL)/100
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLvk=((wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklL)/100)*-1
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbSY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsS
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsblS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJblsY*-1
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblsJ:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl*TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsSYb)/100
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsblY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-   elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJbSlY==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsblY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSsYl
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlsYS=0
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbl=0
-   global TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSbs=0
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYl=db.child("sinais/1").get()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbYS=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsJ(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsbYl.val())
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlbSs=""
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJlSYb=db.child("sinais/1").stream(TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYbS)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSblYJ(target=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJsYlS).start()
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJYls(5)
-   TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYJs('\n'+'-'*48+' ANALISANDO O GRAFICO '+'-'*47+'\n')
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLkl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNk
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLvk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLvNl*-1
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvNJ:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv*wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNklL)/100
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLvl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+   elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJLkvl==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLvl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNlv
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvNlk=0
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLv=0
+   global wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkLN=0
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlv=db.child("sinais/1").get()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLlk=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNJ(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNLlv.val())
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvLkN=""
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJvklL=db.child("sinais/1").stream(wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlLk)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLvlJ(target=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNlvk).start()
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJlvN(5)
+   wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlJN('\n'+'-'*48+' ANALISANDO O GRAFICO '+'-'*47+'\n')
   else:
-   if TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSls=="[Errno -2] Name or service not known":
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSY('    Sem conexao com a internet')
-   elif TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJYSls==TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSslY:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSY('    Acho que voce errou seu email ou senha da IQ Option :( por favor verifique e tente novamente')
+   if wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkvN=="[Errno -2] Name or service not known":
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkl('    Sem conexao com a internet')
+   elif wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJlkvN==wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkNvl:
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkl('    Acho que voce errou seu email ou senha da IQ Option :( por favor verifique e tente novamente')
    else:
-    TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJslSY('    Nao foi possivel se conectar com a IQ Option \n    sua conta nao pode ter autenticacao de 2 fatores ou ter sido criada pelo Facebook.')
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSlbY=TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSbYsl
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHJSbsl.close()
-TzWGxrcqXtdKBgyhnVpkaEALCojDNRMFPUwemOuvfIiQHSJsYl()
+    wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJNvkl('    Nao foi possivel se conectar com a IQ Option \n    sua conta nao pode ter autenticacao de 2 fatores ou ter sido criada pelo Facebook.')
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkvLl=wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkLlNv
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIJkLNv.close()
+wYrpfxVhQtmKHMujbyBaXOGgnCiDzRoEFsqATdSceUPWIkJNlv()

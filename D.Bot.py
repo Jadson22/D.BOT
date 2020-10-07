@@ -225,26 +225,7 @@ while True:
     if event == 'iniciar':
         janela['iniciar'].update(disabled=True)
         janela['salvar'].update(disabled=True)
-
         #desabilitando botões
-        janela['email'].update(email, disabled=True)
-        janela['senha'].update(senha, disabled=True)
-        janela['treinamento'].update(disabled=True)
-        janela['real'].update(disabled=True)
-        janela['preco'].update(amount, disabled=True)
-        janela['porcentagem_preco'].update(porc_preco, disabled=True)
-        janela['stop_win'].update(arquivo.get('GERENCIAMENTO', 'take_profit'), disabled=True)
-        janela['stop_loss'].update(arquivo.get('GERENCIAMENTO', 'stop_loss'), disabled=True)
-        janela['gerenciamento'].update(porcentagem, disabled=True)
-        janela['filtroDbot'].update(filtroDbot, disabled=True)
-        janela['martingale'].update(martingale, disabled=True)
-        janela['martingalePO'].update(martingalePO, disabled=True)
-        janela['soros'].update(soros, disabled=True)
-        janela['sorosGale'].update(sorosGale, disabled=True)
-        janela['nivel_Estrategia'].update(nivel_Estrategia, disabled=True)
-        janela['nivel_Estrategia_PO'].update(nivel_Estrategia_PO, disabled=True)
-        janela['fatorMG'].update(fatorMG, disabled=True)
-        janela['payout'].update(payoutMinimo, disabled=True)
 
         def sair_sistema(msg='    Por favor, verifique as configuracoes de TRADE'):
             global trava
@@ -418,7 +399,7 @@ while True:
                 trava = False
 
         def buy_digital(moeda, valor, direcao, timeframe):
-
+            trava = False
             global conta_lucro
             global conta_perca
             global conta_total
@@ -430,7 +411,6 @@ while True:
             global nivel_SG
             global lucro_total
             global quantidadeMgPO
-            trava = False
             status, id = API.buy_digital_spot(
                 moeda, valor, direcao.lower(), timeframe)
             if status:
@@ -455,7 +435,7 @@ while True:
                             arquivoLOG.write('\n     RESULTADO: WIN    |'+'LUCRO:'+str(
                                 dados_conta['currency_char'])+' '+str(resultado)+' :)')
                             arquivoLOG.close()
-                            trava = True
+                            amount = initial_value
                             conta()
                             if sorosGale:
                                 if nivel_SG == 0:
@@ -489,6 +469,7 @@ while True:
                                 else:
                                     amount = initial_value
                                     quantidadeSoros = 0
+                            trava = True
 
                         else:
                             conta_perca += float(resultado)
@@ -501,7 +482,6 @@ while True:
                             arquivoLOG.close()
                             amount = initial_value
                             quantidadeSoros = 0
-                            trava = True
                             conta()
                             global quantidadeMg
                             if martingale:
@@ -534,7 +514,7 @@ while True:
                                     print('---> MARTINGALE PROXIMA OPERACAO:\n')
                                     quantidadeMgPO += 1
                                     amount = valor * float(fatorMG)
-
+                            trava = True
                         break
             else:
                 trava = True
@@ -543,6 +523,7 @@ while True:
                 print('-' * 131)
 
         def buy_binary(valor, moeda, direcao, timeframe):
+            trava = False
             global conta_lucro
             global conta_perca
             global conta_total
@@ -554,14 +535,13 @@ while True:
             global nivel_SG
             global lucro_total
             global quantidadeMgPO
-            trava = False
             while True:
                 status, id = API.buy(
                     valor, moeda, direcao.lower(), timeframe)
                 if status:
                     time.sleep(randint(0, 4))
                     print('---> OPERACAO:')
-                    print('     ATIVO:', moeda, '| DIRECAO:', direcao, '| EXPIRACAO:',
+                    print('       ATIVO:', moeda, '| DIRECAO:', direcao, '| EXPIRACAO:',
                           timeframe, 'M', '| VALOR:', perfil()['currency_char'], round(valor, 3))
                     arquivoLOG = open('Log de operacoes/' +
                                       data_em_texto+'.txt', 'a', encoding='utf8')
@@ -579,7 +559,7 @@ while True:
                         arquivoLOG.write('\n     RESULTADO: WIN    |'+'LUCRO:'+str(
                             dados_conta['currency_char'])+' '+str(resultado)+' :)')
                         arquivoLOG.close()
-                        trava = True
+                        amount = initial_value
                         conta()
                         if sorosGale:
                             if nivel_SG == 0:
@@ -616,6 +596,7 @@ while True:
                             else:
                                 amount = initial_value
                                 quantidadeSoros = 0
+                        trava = True
                         break
                     elif resultado == 0:
                         print('     RESULTADO: DOJI    |', 'LUCRO:' +
@@ -625,6 +606,7 @@ while True:
                         arquivoLOG.write('\n     RESULTADO: DOJI    |'+'LUCRO:'+str(
                             dados_conta['currency_char'])+' '+str(resultado)+' :|')
                         arquivoLOG.close()
+                        trava = True
                         break
                     else:
                         conta_perca += float(resultado)
@@ -637,7 +619,6 @@ while True:
                         arquivoLOG.close()
                         amount = initial_value
                         quantidadeSoros = 0
-                        trava = True
                         conta()
                         global quantidadeMg
                         if martingale:
@@ -670,10 +651,11 @@ while True:
                                 print('---> MARTINGALE PROXIMA OPERACAO:\n')
                                 quantidadeMgPO += 1
                                 amount = valor * float(fatorMG)
+                        trava = True
                         break
             else:
-                trava = True
                 print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+                trava = True
 
         def conta():
             global conta_lucro
@@ -736,6 +718,25 @@ while True:
 
         except ValueError:
             print('\n\n    Inconsistencia nas configuracoes especificadas, \n    voce nao pode deixar campos em branco ou usar virgula em numero decimal!\n    Assista todos os videos de configuracao para nao ter nenhuma duvida!')
+
+        janela['email'].update(email, disabled=True)
+        janela['senha'].update(senha, disabled=True)
+        janela['treinamento'].update(disabled=True)
+        janela['real'].update(disabled=True)
+        janela['preco'].update(amount, disabled=True)
+        janela['porcentagem_preco'].update(porc_preco, disabled=True)
+        janela['stop_win'].update(arquivo.get('GERENCIAMENTO', 'take_profit'), disabled=True)
+        janela['stop_loss'].update(arquivo.get('GERENCIAMENTO', 'stop_loss'), disabled=True)
+        janela['gerenciamento'].update(porcentagem, disabled=True)
+        janela['filtroDbot'].update(filtroDbot, disabled=True)
+        janela['martingale'].update(martingale, disabled=True)
+        janela['martingalePO'].update(martingalePO, disabled=True)
+        janela['soros'].update(soros, disabled=True)
+        janela['sorosGale'].update(sorosGale, disabled=True)
+        janela['nivel_Estrategia'].update(nivel_Estrategia, disabled=True)
+        janela['nivel_Estrategia_PO'].update(nivel_Estrategia_PO, disabled=True)
+        janela['fatorMG'].update(fatorMG, disabled=True)
+        janela['payout'].update(payoutMinimo, disabled=True)
 
         print('='*27 + ' COPYRIGHT TOP GAIN ' + '='*27)
         API = IQ_Option(email, senha)

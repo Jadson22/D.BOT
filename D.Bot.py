@@ -399,11 +399,11 @@ while True:
                 trava = False
 
         def buy_digital(moeda, valor, direcao, timeframe):
+            global trava
             trava = False
             global conta_lucro
             global conta_perca
             global conta_total
-            global trava
             global amount
             global initial_value
             global nivel
@@ -411,6 +411,7 @@ while True:
             global nivel_SG
             global lucro_total
             global quantidadeMgPO
+            global quantidadeMg
             status, id = API.buy_digital_spot(
                 moeda, valor, direcao.lower(), timeframe)
             if status:
@@ -469,7 +470,6 @@ while True:
                                 else:
                                     amount = initial_value
                                     quantidadeSoros = 0
-                            trava = True
 
                         else:
                             conta_perca += float(resultado)
@@ -483,7 +483,6 @@ while True:
                             amount = initial_value
                             quantidadeSoros = 0
                             conta()
-                            global quantidadeMg
                             if martingale:
                                 if int(nivel_Estrategia) > quantidadeMg:
                                     quantidadeMg += 1
@@ -514,20 +513,18 @@ while True:
                                     print('---> MARTINGALE PROXIMA OPERACAO:\n')
                                     quantidadeMgPO += 1
                                     amount = valor * float(fatorMG)
-                            trava = True
                         break
             else:
-                trava = True
-                print('---> RESULTADO:')
                 print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
                 print('-' * 131)
+                trava = True
 
         def buy_binary(valor, moeda, direcao, timeframe):
+            global trava
             trava = False
             global conta_lucro
             global conta_perca
             global conta_total
-            global trava
             global amount
             global initial_value
             global nivel
@@ -535,6 +532,7 @@ while True:
             global nivel_SG
             global lucro_total
             global quantidadeMgPO
+            global quantidadeMg
             while True:
                 status, id = API.buy(
                     valor, moeda, direcao.lower(), timeframe)
@@ -596,17 +594,16 @@ while True:
                             else:
                                 amount = initial_value
                                 quantidadeSoros = 0
-                        trava = True
                         break
                     elif resultado == 0:
-                        print('     RESULTADO: DOJI    |', 'LUCRO:' +
+                        print('      RESULTADO: DOJI    |', 'LUCRO:' +
                               str(perfil()['currency_char'])+' '+str(resultado) + ' :|')
                         arquivoLOG = open(
                             'Log de operacoes/' + data_em_texto+'.txt', 'a', encoding='utf8')
                         arquivoLOG.write('\n     RESULTADO: DOJI    |'+'LUCRO:'+str(
                             dados_conta['currency_char'])+' '+str(resultado)+' :|')
                         arquivoLOG.close()
-                        trava = True
+                        conta()
                         break
                     else:
                         conta_perca += float(resultado)
@@ -620,7 +617,6 @@ while True:
                         amount = initial_value
                         quantidadeSoros = 0
                         conta()
-                        global quantidadeMg
                         if martingale:
                             if int(nivel_Estrategia) > quantidadeMg:
                                 quantidadeMg += 1
@@ -633,7 +629,6 @@ while True:
                                             '---> MARTINGALE PROXIMA OPERACAO:\n')
                                         quantidadeMgPO += 1
                                         amount = valor * float(fatorMG)
-
                         elif sorosGale:
                             if nivel_SG == 0:
                                 amount = initial_value / 2
@@ -651,16 +646,17 @@ while True:
                                 print('---> MARTINGALE PROXIMA OPERACAO:\n')
                                 quantidadeMgPO += 1
                                 amount = valor * float(fatorMG)
-                        trava = True
                         break
             else:
                 print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+                print('-' * 131)
                 trava = True
 
         def conta():
             global conta_lucro
             global conta_perca
             global conta_total
+            global trava
             conta_total = float(conta_lucro) - (float(conta_perca) * -1)
             print(' ')
             print('       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(
@@ -674,6 +670,7 @@ while True:
             arquivoLOG.write('-'*100)
             arquivoLOG.write('\n')
             arquivoLOG.close()
+            trava = True
             if conta_total >= stop_win:
                 stop('win')
             elif conta_total <= stop_loss:

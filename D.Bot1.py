@@ -301,10 +301,6 @@ while True:
         def entradaGale(moeda, resultado, valor, direcao, timeframe):
             if trava:
                 print('---> MARTINGALE:\n')
-                arquivoLOG = open('Log de operacoes/' +
-                                  data_em_texto+'.txt', 'a', encoding='utf8')
-                arquivoLOG.write('\n---> MARTINGALE:\n')
-                arquivoLOG.close()
                 valorMartingale = valor * float(fatorMG)
                 if moeda in abertasBinaria:
                     threading.Thread(target=buy_binary, args=(
@@ -312,6 +308,10 @@ while True:
                 elif moeda in abertasDigital:
                     threading.Thread(target=buy_digital, args=(
                         moeda, valorMartingale, direcao, timeframe), daemon=True).start()
+                arquivoLOG = open('Log de operacoes/' +
+                                  data_em_texto+'.txt', 'a', encoding='utf8')
+                arquivoLOG.write('\n---> MARTINGALE:\n')
+                arquivoLOG.close()
 
         def ouvirOperacao(message):
             global sinal

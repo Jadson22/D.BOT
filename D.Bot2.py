@@ -23,13 +23,11 @@ sg.change_look_and_feel('Black')
 direita = [
     [sg.Text('    ')],
     [sg.Output(size=(83, 35), font=('Helvetica', 11), key='-OUT-')],
-    [sg.Button('  SALVAR CONFIGURACOES ', key='salvar')]
+    [sg.Button('  SALVAR CONFIGURACOES ', key='salvar'), sg.Text(' '), sg.Button('  INICIAR OPERACOES  ', key='iniciar')]
 ]
 
 esquerda = [
     [sg.Text(''), sg.Image(r'log/log.png', size=(200, 205))],
-
-    [sg.Text('       '), sg.Button('  INICIAR OPERACOES  ', key='iniciar')],
 
     [sg.Frame(' Acesso ', [
         [sg.Text('Email IQ: ', key='txtw'), sg.Input(size=(25, 0),
@@ -80,9 +78,9 @@ global amount
 global espera
 espera = True
 global abertasDigital
-abertasDigital = []
+abertasDigital = ['EURUSD-OTC']
 global abertasBinaria
-abertasBinaria = []
+abertasBinaria = ['EURUSD-OTC']
 global quantidadeMg
 quantidadeMg = 0
 global quantidadeSoros
@@ -225,7 +223,7 @@ while True:
     if event == 'iniciar':
         janela['iniciar'].update(disabled=True)
         janela['salvar'].update(disabled=True)
-        #desabilitando botões
+        # desabilitando botões
 
         def sair_sistema(msg='    Por favor, verifique as configuracoes de TRADE'):
             global trava
@@ -303,11 +301,9 @@ while True:
                 print('---> MARTINGALE:\n')
                 valorMartingale = valor * float(fatorMG)
                 if moeda in abertasBinaria:
-                    threading.Thread(target=buy_binary, args=(
-                        valorMartingale, moeda, direcao, timeframe), daemon=True).start()
+                    buy_binary(valorMartingale, moeda, direcao, timeframe)
                 elif moeda in abertasDigital:
-                    threading.Thread(target=buy_digital, args=(
-                        moeda, valorMartingale, direcao, timeframe), daemon=True).start()
+                    buy_digital(moeda, valorMartingale, direcao, timeframe)
                 arquivoLOG = open('Log de operacoes/' +
                                   data_em_texto+'.txt', 'a', encoding='utf8')
                 arquivoLOG.write('\n---> MARTINGALE:\n')
@@ -317,34 +313,11 @@ while True:
             global sinal
             global sinalinicio
             sinal = str(message["data"])
-            if sinalinicio != sinal:
-                sinalinicio = sinal
-                if trava:
-                    dados = sinal.split(';')
-                    moeda = dados[0]
-                    direcao = dados[1]
-                    timeframe = int(dados[2])
-                    horario = dados[3]
-                    tendencia = dados[4]
-                    valor = amount
-                    global quantidadeMg
-                    quantidadeMg = 0
-                    if filtroDbot == False:
-                        if moeda in abertasBinaria:
-                            threading.Thread(target=buy_binary, args=(
-                                valor, moeda, direcao, timeframe), daemon=True).start()
-                        elif moeda in abertasDigital:
-                            threading.Thread(target=buy_digital, args=(
-                                moeda, valor, direcao, timeframe), daemon=True).start()
-                    if filtroDbot == True and tendencia == 't':
-                        if moeda in abertasBinaria:
-                            threading.Thread(target=buy_binary, args=(
-                                valor, moeda, direcao, timeframe), daemon=True).start()
-                        elif moeda in abertasDigital:
-                            threading.Thread(target=buy_digital, args=(
-                                moeda, valor, direcao, timeframe), daemon=True).start()
+            arquivoLOG = open('log/op.txt', 'a', encoding='utf8')
+            arquivoLOG.write(sinal + '\n')
+            arquivoLOG.close()
 
-        def payout(par, tipo, timeframe=1):
+        """ def payout(par, tipo, timeframe=1):
             if tipo == 'turbo':
                 a = API.get_all_profit()
                 return int(100 * a[par]['turbo'])
@@ -357,9 +330,9 @@ while True:
                         break
                     time.sleep(1)
                 API.unsubscribe_strike_list(par, timeframe)
-                return d
+                return d """
 
-        def moedas_abertas():
+        """ def moedas_abertas():
             while True:
                 global abertasDigital
                 global abertasBinaria
@@ -379,7 +352,7 @@ while True:
                             abertasBinaria.append(paridade)
                     continue
                 time.sleep(1200)
-                continue
+                continue """
 
         def stop(res):
             global trava
@@ -399,8 +372,6 @@ while True:
                 trava = False
 
         def buy_digital(moeda, valor, direcao, timeframe):
-            global trava
-            trava = False
             global conta_lucro
             global conta_perca
             global conta_total
@@ -437,6 +408,7 @@ while True:
                                 dados_conta['currency_char'])+' '+str(resultado)+' :)')
                             arquivoLOG.close()
                             amount = initial_value
+                            quantidadeMgPO = 0
                             conta()
                             if sorosGale:
                                 if nivel_SG == 0:
@@ -517,11 +489,8 @@ while True:
             else:
                 print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
                 print('-' * 131)
-                trava = True
 
         def buy_binary(valor, moeda, direcao, timeframe):
-            global trava
-            trava = False
             global conta_lucro
             global conta_perca
             global conta_total
@@ -558,6 +527,7 @@ while True:
                             dados_conta['currency_char'])+' '+str(resultado)+' :)')
                         arquivoLOG.close()
                         amount = initial_value
+                        quantidadeMgPO = 0
                         conta()
                         if sorosGale:
                             if nivel_SG == 0:
@@ -650,13 +620,11 @@ while True:
             else:
                 print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
                 print('-' * 131)
-                trava = True
 
         def conta():
             global conta_lucro
             global conta_perca
             global conta_total
-            global trava
             conta_total = float(conta_lucro) - (float(conta_perca) * -1)
             print(' ')
             print('       LUCRO PARCIAL: {} | PERDA PARCIAL: {} | TOTAL: {}'.format(
@@ -670,11 +638,44 @@ while True:
             arquivoLOG.write('-'*100)
             arquivoLOG.write('\n')
             arquivoLOG.close()
-            trava = True
             if conta_total >= stop_win:
                 stop('win')
             elif conta_total <= stop_loss:
                 stop('loss')
+
+        def carregar_sinais():
+            arquivo = open('log/op.txt', "r")
+            lista = list(arquivo.readlines())
+            arquivo.close()
+            ultimo_sinal = lista[len(lista)-1]
+            return ultimo_sinal
+
+        def main():
+            global sinalinicio
+            while True:
+                if trava:
+                    sinal = carregar_sinais()
+                    if sinalinicio != sinal:
+                        dados = sinal.split(';')
+                        moeda = dados[0]
+                        direcao = dados[1]
+                        timeframe = int(dados[2])
+                        horario = dados[3]
+                        tendencia = dados[4]
+                        valor = amount
+                        global quantidadeMg
+                        quantidadeMg = 0
+                        if filtroDbot == False:
+                            if moeda in abertasBinaria:
+                                buy_binary(valor, moeda, direcao, timeframe)
+                            elif moeda in abertasDigital:
+                                buy_digital(moeda, valor, direcao, timeframe)
+                        if filtroDbot == True and tendencia == 't':
+                            if moeda in abertasBinaria:
+                                buy_binary(valor, moeda, direcao, timeframe)
+                            elif moeda in abertasDigital:
+                                buy_digital(moeda, valor, direcao, timeframe)
+                        sinalinicio = carregar_sinais()
 
         try:
             file = open('setup.conf')
@@ -722,8 +723,10 @@ while True:
         janela['real'].update(disabled=True)
         janela['preco'].update(amount, disabled=True)
         janela['porcentagem_preco'].update(porc_preco, disabled=True)
-        janela['stop_win'].update(arquivo.get('GERENCIAMENTO', 'take_profit'), disabled=True)
-        janela['stop_loss'].update(arquivo.get('GERENCIAMENTO', 'stop_loss'), disabled=True)
+        janela['stop_win'].update(arquivo.get(
+            'GERENCIAMENTO', 'take_profit'), disabled=True)
+        janela['stop_loss'].update(arquivo.get(
+            'GERENCIAMENTO', 'stop_loss'), disabled=True)
         janela['gerenciamento'].update(porcentagem, disabled=True)
         janela['filtroDbot'].update(filtroDbot, disabled=True)
         janela['martingale'].update(martingale, disabled=True)
@@ -731,7 +734,8 @@ while True:
         janela['soros'].update(soros, disabled=True)
         janela['sorosGale'].update(sorosGale, disabled=True)
         janela['nivel_Estrategia'].update(nivel_Estrategia, disabled=True)
-        janela['nivel_Estrategia_PO'].update(nivel_Estrategia_PO, disabled=True)
+        janela['nivel_Estrategia_PO'].update(
+            nivel_Estrategia_PO, disabled=True)
         janela['fatorMG'].update(fatorMG, disabled=True)
         janela['payout'].update(payoutMinimo, disabled=True)
 
@@ -780,7 +784,8 @@ while True:
 
             versaoOk = False
             versao = '1'
-            request = requests.get('https://assinantes-dbot.herokuapp.com/assinantes')
+            request = requests.get(
+                'https://assinantes-dbot.herokuapp.com/assinantes')
             data = request.json()
 
             for i in data:
@@ -837,6 +842,8 @@ while True:
             data_em_texto = data_atual.strftime('%d%m%Y')
             arquivoLOG = open('log de operacoes/'+data_em_texto+'.txt', 'w')
             arquivoLOG.close()
+            arquivoLOGop = open('log/op.txt', 'w')
+            arquivoLOGop.close()
 
             if porcentagem == True:
                 stop_win = (take_profit * saldo) / 100
@@ -864,14 +871,14 @@ while True:
             global conta_total
             conta_total = 0
 
-            dadoDB = db.child("sinais/1").get()
-            sinalinicio = str(dadoDB.val())
             sinal = ""
             dadoDB1 = db.child("sinais/1").stream(ouvirOperacao)
-            threading.Thread(target=moedas_abertas).start()
+            """ threading.Thread(target=moedas_abertas).start() """
             time.sleep(5)
-
             print('\n'+'-'*48 + ' ANALISANDO O GRAFICO ' + '-'*47 + '\n')
+            global sinalinicio
+            sinalinicio = carregar_sinais()
+            threading.Thread(target=main).start()
 
         else:
             if reason == "[Errno -2] Name or service not known":

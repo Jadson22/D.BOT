@@ -1,0 +1,30 @@
+
+---> OPERACAO:
+     ATIVO:EURUSD-OTC| DIRECAO:CALL| EXPIRACAO:1M| VALOR:$27.839
+     RESULTADO: LOSS   |PREJUIZO:$ -15.61 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -15.61 | TOTAL: -15.61
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD-OTC| DIRECAO:CALL| EXPIRACAO:1M| VALOR:$13.92
+     RESULTADO: WIN    |LUCRO:$ 11.55 :)
+       LUCRO PARCIAL: 11.55 | PERDA PARCIAL: -15.61 | TOTAL: -4.06
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD-OTC| DIRECAO:CALL| EXPIRACAO:1M| VALOR:$39.39
+     RESULTADO: LOSS   |PREJUIZO:$ -39.39 :(
+       LUCRO PARCIAL: 11.55 | PERDA PARCIAL: -55.0 | TOTAL: -43.45
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD-OTC| DIRECAO:CALL| EXPIRACAO:1M| VALOR:$20.88
+     RESULTADO: WIN    |LUCRO:$ 17.33 :)
+       LUCRO PARCIAL: 28.88 | PERDA PARCIAL: -55.0 | TOTAL: -26.12
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD-OTC| DIRECAO:CALL| EXPIRACAO:1M| VALOR:$45.17
+     RESULTADO: LOSS   |PREJUIZO:$ -45.17 :(
+       LUCRO PARCIAL: 28.88 | PERDA PARCIAL: -100.17 | TOTAL: -71.29
+----------------------------------------------------------------------------------------------------

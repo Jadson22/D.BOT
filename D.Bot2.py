@@ -78,9 +78,9 @@ global amount
 global espera
 espera = True
 global abertasDigital
-abertasDigital = ['EURUSD-OTC']
+abertasDigital = []
 global abertasBinaria
-abertasBinaria = ['EURUSD-OTC']
+abertasBinaria = []
 global quantidadeMg
 quantidadeMg = 0
 global quantidadeSoros
@@ -317,7 +317,7 @@ while True:
             arquivoLOG.write(sinal + '\n')
             arquivoLOG.close()
 
-        """ def payout(par, tipo, timeframe=1):
+        def payout(par, tipo, timeframe=1):
             if tipo == 'turbo':
                 a = API.get_all_profit()
                 return int(100 * a[par]['turbo'])
@@ -330,9 +330,9 @@ while True:
                         break
                     time.sleep(1)
                 API.unsubscribe_strike_list(par, timeframe)
-                return d """
+                return d 
 
-        """ def moedas_abertas():
+        def moedas_abertas():
             while True:
                 global abertasDigital
                 global abertasBinaria
@@ -352,7 +352,7 @@ while True:
                             abertasBinaria.append(paridade)
                     continue
                 time.sleep(1200)
-                continue """
+                continue 
 
         def stop(res):
             global trava
@@ -617,9 +617,10 @@ while True:
                                 quantidadeMgPO += 1
                                 amount = valor * float(fatorMG)
                         break
-            else:
-                print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
-                print('-' * 131)
+                else:
+                    print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+                    print('-' * 131)
+                    break
 
         def conta():
             global conta_lucro
@@ -652,6 +653,8 @@ while True:
 
         def main():
             global sinalinicio
+            global abertasBinaria
+            global abertasDigital
             while True:
                 if trava:
                     sinal = carregar_sinais()
@@ -783,7 +786,7 @@ while True:
             print(' ')
 
             versaoOk = False
-            versao = '1'
+            versao = '2'
             request = requests.get(
                 'https://assinantes-dbot.herokuapp.com/assinantes')
             data = request.json()
@@ -873,7 +876,7 @@ while True:
 
             sinal = ""
             dadoDB1 = db.child("sinais/1").stream(ouvirOperacao)
-            """ threading.Thread(target=moedas_abertas).start() """
+            threading.Thread(target=moedas_abertas).start()
             time.sleep(5)
             print('\n'+'-'*48 + ' ANALISANDO O GRAFICO ' + '-'*47 + '\n')
             global sinalinicio

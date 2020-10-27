@@ -332,27 +332,26 @@ while True:
                 API.unsubscribe_strike_list(par, timeframe)
                 return d 
 
-        def moedas_abertas():
-            while True:
-                global abertasDigital
-                global abertasBinaria
-                par = API.get_all_open_time()
-                abertasDigital.clear()
-                abertasBinaria.clear()
-                for paridade in par['digital']:
-                    if par['digital'][paridade]['open'] == True:
-                        payouts = payout(paridade, 'digital')
-                        if payouts >= int(payoutMinimo):
-                            abertasDigital.append(paridade)
-                    continue
-                for paridade in par['turbo']:
-                    if par['turbo'][paridade]['open'] == True:
-                        payouts = payout(paridade, 'turbo')
-                        if payouts >= int(payoutMinimo):
-                            abertasBinaria.append(paridade)
-                    continue
-                time.sleep(1200)
-                continue 
+        def moedas_abertas(): 
+            global abertasDigital
+            global abertasBinaria
+            par = API.get_all_open_time()
+            abertasDigital.clear()
+            abertasBinaria.clear()
+            for paridade in par['digital']:
+                if par['digital'][paridade]['open'] == True:
+                    payouts = payout(paridade, 'digital')
+                    if payouts >= int(payoutMinimo):
+                        abertasDigital.append(paridade)
+                continue
+            for paridade in par['turbo']:
+                if par['turbo'][paridade]['open'] == True:
+                    payouts = payout(paridade, 'turbo')
+                    if payouts >= int(payoutMinimo):
+                        abertasBinaria.append(paridade)
+                continue
+                
+                
 
         def stop(res):
             global trava
@@ -663,21 +662,47 @@ while True:
                         moeda = dados[0]
                         direcao = dados[1]
                         timeframe = int(dados[2])
-                        horario = dados[3]
+                        horario = dados[3]+':00'
                         tendencia = dados[4]
                         valor = amount
                         global quantidadeMg
                         quantidadeMg = 0
                         if filtroDbot == False:
+                            moedas_abertas()
                             if moeda in abertasBinaria:
-                                buy_binary(valor, moeda, direcao, timeframe)
+                                while True:
+                                    now = timestamp_converter(API.get_server_timestamp())
+                                    dividido = now.split()
+                                    hora_atual = dividido[1]
+                                    if hora_atual == horario:
+                                        buy_binary(valor, moeda, direcao, timeframe)
+                                        break
                             elif moeda in abertasDigital:
-                                buy_digital(moeda, valor, direcao, timeframe)
+                                while True:
+                                    now = timestamp_converter(API.get_server_timestamp())
+                                    dividido = now.split()
+                                    hora_atual = dividido[1]
+                                    if hora_atual == horario:
+                                        buy_digital(moeda, valor, direcao, timeframe)
+                                        break
                         if filtroDbot == True and tendencia == 't':
+                            moedas_abertas()
                             if moeda in abertasBinaria:
-                                buy_binary(valor, moeda, direcao, timeframe)
+                                while True:
+                                    now = timestamp_converter(API.get_server_timestamp())
+                                    dividido = now.split()
+                                    hora_atual = dividido[1]
+                                    if hora_atual == horario:
+                                        buy_binary(valor, moeda, direcao, timeframe)
+                                        break
                             elif moeda in abertasDigital:
-                                buy_digital(moeda, valor, direcao, timeframe)
+                                while True:
+                                    now = timestamp_converter(API.get_server_timestamp())
+                                    dividido = now.split()
+                                    hora_atual = dividido[1]
+                                    if hora_atual == horario:
+                                        buy_digital(moeda, valor, direcao, timeframe)
+                                        break
                         sinalinicio = carregar_sinais()
 
         try:
@@ -786,7 +811,7 @@ while True:
             print(' ')
 
             versaoOk = False
-            versao = '2'
+            versao = '3'
             request = requests.get(
                 'https://assinantes-dbot.herokuapp.com/assinantes')
             data = request.json()
@@ -876,7 +901,7 @@ while True:
 
             sinal = ""
             dadoDB1 = db.child("sinais/1").stream(ouvirOperacao)
-            threading.Thread(target=moedas_abertas).start()
+            #threading.Thread(target=moedas_abertas).start()
             time.sleep(5)
             print('\n'+'-'*48 + ' ANALISANDO O GRAFICO ' + '-'*47 + '\n')
             global sinalinicio

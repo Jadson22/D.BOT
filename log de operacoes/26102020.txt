@@ -1,0 +1,15 @@
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:PUT| EXPIRACAO:5M| VALOR:$25.163
+     RESULTADO: LOSS   |PREJUIZO:$ -24.35 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -24.35 | TOTAL: -24.35
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:PUT| EXPIRACAO:5M| VALOR:$55.359
+     RESULTADO: LOSS   |PREJUIZO:$ -34.99 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -59.34 | TOTAL: -59.34
+----------------------------------------------------------------------------------------------------
+
+---> STOP LOSS :(
+---> MARTINGALE:

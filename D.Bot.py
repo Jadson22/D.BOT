@@ -314,7 +314,7 @@ while True:
             global sinalinicio
             sinal = str(message["data"])
             arquivoLOG = open('log/op.txt', 'a', encoding='utf8')
-            arquivoLOG.write(sinal + '\n')
+            arquivoLOG.write('\n' + sinal)
             arquivoLOG.close()
 
         def payout(par, tipo, timeframe=1):
@@ -332,23 +332,26 @@ while True:
                 API.unsubscribe_strike_list(par, timeframe)
                 return d 
 
-        def moedas_abertas(): 
-            global abertasDigital
-            global abertasBinaria
-            par = API.get_all_open_time()
-            abertasDigital.clear()
-            abertasBinaria.clear()
-            for paridade in par['digital']:
-                if par['digital'][paridade]['open'] == True:
-                    payouts = payout(paridade, 'digital')
-                    if payouts >= int(payoutMinimo):
-                        abertasDigital.append(paridade)
-                continue
-            for paridade in par['turbo']:
-                if par['turbo'][paridade]['open'] == True:
-                    payouts = payout(paridade, 'turbo')
-                    if payouts >= int(payoutMinimo):
-                        abertasBinaria.append(paridade)
+        def moedas_abertas():
+            while True:
+                global abertasDigital
+                global abertasBinaria
+                par = API.get_all_open_time()
+                abertasDigital.clear()
+                abertasBinaria.clear()
+                for paridade in par['digital']:
+                    if par['digital'][paridade]['open'] == True:
+                        payouts = payout(paridade, 'digital')
+                        if payouts >= int(payoutMinimo):
+                            abertasDigital.append(paridade)
+                    continue
+                for paridade in par['turbo']:
+                    if par['turbo'][paridade]['open'] == True:
+                        payouts = payout(paridade, 'turbo')
+                        if payouts >= int(payoutMinimo):
+                            abertasBinaria.append(paridade)
+                    continue
+                time.sleep(1200)
                 continue
                 
                 
@@ -486,7 +489,7 @@ while True:
                                     amount = valor * float(fatorMG)
                         break
             else:
-                print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+                print('       A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
                 print('-' * 131)
 
         def buy_binary(valor, moeda, direcao, timeframe):
@@ -617,7 +620,7 @@ while True:
                                 amount = valor * float(fatorMG)
                         break
                 else:
-                    print('    A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
+                    print('       A QUERIDA IQ BLOQUEOU MINHA ENTRADA :(')
                     print('-' * 131)
                     break
 
@@ -661,48 +664,73 @@ while True:
                         dados = sinal.split(';')
                         moeda = dados[0]
                         direcao = dados[1]
-                        timeframe = int(dados[2])
-                        horario = dados[3]+':00'
+                        timeframe = 5
+                        horario = dados[3]
                         tendencia = dados[4]
                         valor = amount
                         global quantidadeMg
                         quantidadeMg = 0
                         if filtroDbot == False:
-                            moedas_abertas()
                             if moeda in abertasBinaria:
+                                print('---> ANALISE:')
+                                print('       ATIVO:', moeda, '| DIRECAO:', direcao, '| HORARIO OPERACAO:', horario)
                                 while True:
-                                    now = timestamp_converter(API.get_server_timestamp())
-                                    dividido = now.split()
-                                    hora_atual = dividido[1]
-                                    if hora_atual == horario:
+                                    hora_atuais = datetime.now()
+                                    hora = hora_atuais.strftime('%H:%M')
+                                    minuto = int(hora[3:5])
+                                    minuto2 = int(horario[3:5])
+                                    if hora == horario:
                                         buy_binary(valor, moeda, direcao, timeframe)
                                         break
+                                    elif minuto > minuto2:
+                                        print('       HORARIO EXCEDIDO, AGUARDANDO A PRÓXIMA OPERACAO')
+                                        break
                             elif moeda in abertasDigital:
+                                print('---> ANALISE:')
+                                print('       ATIVO:', moeda, '| DIRECAO:', direcao, '| HORARIO OPERACAO:', horario)
                                 while True:
-                                    now = timestamp_converter(API.get_server_timestamp())
-                                    dividido = now.split()
-                                    hora_atual = dividido[1]
-                                    if hora_atual == horario:
+                                    hora_atuais = datetime.now()
+                                    hora = hora_atuais.strftime('%H:%M')
+                                    minuto = int(hora[3:5])
+                                    minuto2 = int(horario[3:5])
+                                    if hora == horario:
                                         buy_digital(moeda, valor, direcao, timeframe)
+                                        break
+                                    elif minuto > minuto2:
+                                        print('       HORARIO EXCEDIDO, AGUARDANDO A PRÓXIMA OPERACAO')
                                         break
                         if filtroDbot == True and tendencia == 't':
-                            moedas_abertas()
                             if moeda in abertasBinaria:
+                                print('---> ANALISE:')
+                                print('       ATIVO:', moeda, '| DIRECAO:', direcao, '| HORARIO OPERACAO:', horario)
                                 while True:
-                                    now = timestamp_converter(API.get_server_timestamp())
-                                    dividido = now.split()
-                                    hora_atual = dividido[1]
-                                    if hora_atual == horario:
+                                    hora_atuais = datetime.now()
+                                    hora = hora_atuais.strftime('%H:%M')
+                                    minuto = int(hora[3:5])
+                                    minuto2 = int(horario[3:5])
+                                    if hora == horario:
                                         buy_binary(valor, moeda, direcao, timeframe)
                                         break
+                                    elif minuto > minuto2:
+                                        print('       HORARIO EXCEDIDO, AGUARDANDO A PRÓXIMA OPERACAO')
+                                        break
                             elif moeda in abertasDigital:
+                                print('---> ANALISE:')
+                                print('       ATIVO:', moeda, '| DIRECAO:', direcao, '| HORARIO OPERACAO:', horario)
                                 while True:
-                                    now = timestamp_converter(API.get_server_timestamp())
-                                    dividido = now.split()
-                                    hora_atual = dividido[1]
-                                    if hora_atual == horario:
+                                    hora_atuais = datetime.now()
+                                    hora = hora_atuais.strftime('%H:%M')
+                                    minuto = int(hora[3:5])
+                                    minuto2 = int(horario[3:5])
+                                    if hora == horario:
                                         buy_digital(moeda, valor, direcao, timeframe)
                                         break
+                                    elif minuto > minuto2:
+                                        print('       HORARIO EXCEDIDO, AGUARDANDO A PRÓXIMA OPERACAO')
+                                        break
+
+                        
+                                        
                         sinalinicio = carregar_sinais()
 
         try:
@@ -774,8 +802,8 @@ while True:
         if check:
             configDBot = {
                 "apiKey": "apiKey",
-                "authDomain": "dtraders-86997.firebaseapp.com",
-                "databaseURL": "https://dtraders-86997.firebaseio.com/",
+                "authDomain": "dbot-price.firebaseapp.com",
+                "databaseURL": "https://dbot-price.firebaseio.com/",
                 "storageBucket": "projectId.appspot.com"
             }
             firebase = pyrebase.initialize_app(configDBot)
@@ -789,7 +817,7 @@ while True:
             mensagemBanco3 = db.child("mensagem3").get()
             mensagem3 = str(mensagemBanco3.val())
 
-            confiaveis = ['demotrade-topgain.firebaseio.com']
+            confiaveis = ['dbot-price.firebaseio.com']
             threading.Thread(target=verificacaoConect).start()
             threading.Thread(target=verificacaoConectDB).start()
 
@@ -811,7 +839,7 @@ while True:
             print(' ')
 
             versaoOk = False
-            versao = '3'
+            versao = '7'
             request = requests.get(
                 'https://assinantes-dbot.herokuapp.com/assinantes')
             data = request.json()
@@ -901,8 +929,8 @@ while True:
 
             sinal = ""
             dadoDB1 = db.child("sinais/1").stream(ouvirOperacao)
-            #threading.Thread(target=moedas_abertas).start()
-            time.sleep(5)
+            threading.Thread(target=moedas_abertas).start()
+            time.sleep(10)
             print('\n'+'-'*48 + ' ANALISANDO O GRAFICO ' + '-'*47 + '\n')
             global sinalinicio
             sinalinicio = carregar_sinais()

@@ -1,0 +1,28 @@
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:CALL| EXPIRACAO:5M| VALOR:$26.481
+     RESULTADO: LOSS   |PREJUIZO:$ -12.39 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -12.39 | TOTAL: -12.39
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:CALL| EXPIRACAO:5M| VALOR:$52.962
+     RESULTADO: LOSS   |PREJUIZO:$ -27.8 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -40.19 | TOTAL: -40.19
+----------------------------------------------------------------------------------------------------
+
+---> MARTINGALE:
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:PUT| EXPIRACAO:5M| VALOR:$105.925
+     RESULTADO: LOSS   |PREJUIZO:$ -55.61 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -95.8 | TOTAL: -95.8
+----------------------------------------------------------------------------------------------------
+
+---> OPERACAO:
+     ATIVO:EURUSD| DIRECAO:PUT| EXPIRACAO:5M| VALOR:$211.85
+     RESULTADO: LOSS   |PREJUIZO:$ -111.22 :(
+       LUCRO PARCIAL: 0 | PERDA PARCIAL: -207.02 | TOTAL: -207.02
+----------------------------------------------------------------------------------------------------
+
+---> MARTINGALE:
